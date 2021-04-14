@@ -35,6 +35,7 @@
             "rideshare": true,
             "pickup_location": "Grand Central Terminal",
             "stops": [
+
                 {"sequence": 1, "passenger": "Vishal", "destination": "Madison Square", "fare": 3.99},
                 {"sequence": 2, "passenger": "Clara", "destination": "Union Square", "fare": 5.99},
                 {"sequence": 3, "passenger": "Lee", "destination": "Washington Square", "fare": 7.99}
@@ -45,10 +46,16 @@
         // IMPLEMENTATION SECTION (write your own JavaScript below)
         //
 
+        var f = trip["driver"]["first_name"]
+        var l = trip["driver"]["last_name"]
+        var fullName = f + " " + l
+        console.log("DRIVER:", fullName)
         console.log("TRIP", trip)
 
 
+console.log("STOPS", trip ["stops"].length)
 
+        console.log("First Stop", trip["stops"] [0] ["destination"])
 
 
 
